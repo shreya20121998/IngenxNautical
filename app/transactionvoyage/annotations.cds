@@ -1,0 +1,1 @@
+using NauticalVoyageService as service from '../../srv/Voyageservice';

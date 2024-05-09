@@ -1,0 +1,206 @@
+<mvc:View
+    xmlns:controls="sap.viz.ui5.controls"
+    controllerName="com.ingenx.nauti.transactionvoyage.controller.VoyageApproval"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:semantic="sap.m.semantic"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+    xmlns:cards="sap.f.cards"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:ui="sap.ui.table"
+    xmlns:u="sap.ui.unified"
+    xmlns:c="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+>
+    <Page
+        id="detail"
+        title="Voyage Approval"
+        backgroundDesign="Solid"
+        navButtonPress=".onPressDetailBack"
+    >
+   
+        <HBox class="mainHeaderApproval" alignItems="End" width="100%">
+            <HBox width="70%">
+                <form:SimpleForm editable="true">
+                    <Label
+                        id="IDGenLabel1"
+                        text="Voyage Number "
+                    />
+                    <Input
+                        id="voyageNo"
+                        showValueHelp="true"
+                    valueHelpRequest="onVoyageNumber"
+                    width="100%"
+                    selectedItem=""
+                />
+                </form:SimpleForm>
+            </HBox>
+          
+            <HBox class="btnForApproval" width="30%">
+                <Button  text="Approve" ></Button>
+                <Button  text="Reject" class="rejectBtn"></Button>
+            </HBox>
+            
+        </HBox>
+
+        <IconTabBar
+            id="idIconTabBarNoIcons"
+            tabDensityMode="Compact"
+            class="icontab"
+        >
+            <items>
+                <IconTabFilter
+                    text="Approve Voyage"
+                    key="info"
+                >
+                <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
+                
+                    <Table id="myTableId" items="{voyapprovalSet}" width="auto" visible="true">
+                        <columns>
+                            <Column width="95px">
+                                <Text text="Approval Req. No."  />
+                            </Column>
+                            <Column>
+                                <Text text="Voyage No." />
+                            </Column>
+                            <Column>
+                                <Text text="Created By" />
+                            </Column>
+                            <Column>
+                                <Text text="Created On" />
+                            </Column>
+                            <Column>
+                                <Text text="Created At" />
+                            </Column>
+                            <Column>
+                                <Text text="Approver 1" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved On" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved At" />
+                            </Column>
+                            <Column>
+                                <Text text="Approver 2" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved On" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved At" />
+                            </Column>
+                            <Column>
+                                <Text text="Approver 3" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved On" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved At" />
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text id="vrReqNo1" text="" />
+                                    <Text id="VoyageNo1" text="" />
+                                    <Text id="CreatedBy1" text="" />
+                                    <Text id="CreatedOn1" text="" />
+                                    <Text id="CreatedAt1" text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                    </ScrollContainer>
+                </IconTabFilter>
+
+                <IconTabFilter
+                    text="Voyage Approval Status Report"
+                    key="info"
+                >
+                    <Table>
+                        <columns>
+                            <Column>
+                                <Text text="Approval Req. No." />
+                            </Column>
+                            <Column>
+                                <Text text="Voyage No." />
+                            </Column>
+                            <Column>
+                                <Text text="Created By" />
+                            </Column>
+                            <Column>
+                                <Text text="Created On" />
+                            </Column>
+                            <Column>
+                                <Text text="Created At" />
+                            </Column>
+                            <Column>
+                                <Text text="Approver 1" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved On" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved At" />
+                            </Column>
+                            <Column>
+                                <Text text="Approver 2" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved On" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved At" />
+                            </Column>
+                            <Column>
+                                <Text text="Approver 3" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved On" />
+                            </Column>
+                            <Column>
+                                <Text text="Approved At" />
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>

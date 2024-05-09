@@ -11,7 +11,7 @@ service NauticalMasterService {
 ;
     
     entity ClassMasterSet as projection on NAUTIMASTER_BTP_SRV.ClassMasterSet
-    {        key ZfValue, ZfDesc     }    
+    {        key ZfValue, ZfDesc }    
 ;
     
     entity CostMasterSet as projection on NAUTIMASTER_BTP_SRV.CostMasterSet
@@ -33,15 +33,14 @@ service NauticalMasterService {
     entity EventMasterSet as projection on NAUTIMASTER_BTP_SRV.EventMasterSet
     {        key Evtty, Text     }    
 ;
-    
+
     entity MaintainGroupSet as projection on NAUTIMASTER_BTP_SRV.MaintainGroupSet
     {        key Zuser, Zgroup     }    
 ;
-    
+
     entity PortmasterSet as projection on NAUTIMASTER_BTP_SRV.PortmasterSet
     {        key Country, key Portc, Portn, Reancho, Latitude, Longitude, Countryn, Locid, Ind     }    
 ;
-    
     entity PortmasterUpdateSet as projection on NAUTIMASTER_BTP_SRV.PortmasterUpdateSet
     {        key Country, key Portc, Portn, Reancho, Latitude, Longitude, Countryn, Locid, Ind     }    
 ;

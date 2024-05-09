@@ -1,0 +1,18 @@
+<mvc:View controllerName="com.ingenx.nauti.transactionvoyage.controller.App"
+xmlns:html="http://www.w3.org/1999/xhtml"
+xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+xmlns="sap.m"  xmlns:tnt="sap.tnt" >
+ 
+     <tnt:ToolPage id="toolPage">
+      
+    <tnt:mainContents>
+       
+    <App id="app" class="main_page">
+       
+    </App>
+    </tnt:mainContents>
+    </tnt:ToolPage>
+   
+   
+   
+</mvc:View>

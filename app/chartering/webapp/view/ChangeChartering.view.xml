@@ -125,7 +125,7 @@
                             valueHelpRequest="vendorNo"
                             showValueHelp="true"
                             width="200px"
-                              liveChange="vendorNo"   valueHelpOnly="true" tokenUpdate="onTokenUpdate"
+                            liveChange="vendorNo"   valueHelpOnly="true" tokenUpdate="onTokenUpdate"
                         />
                     </FlexBox>
                 </VBox>

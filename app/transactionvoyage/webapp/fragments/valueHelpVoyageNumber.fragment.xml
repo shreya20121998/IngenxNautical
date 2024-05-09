@@ -7,10 +7,10 @@
         noDataText="Loading"
         title="Select Voyage No."
         search="onChartSearch"
-        confirm="onCharteringValueHelpClose"
-        cancel="onCharteringValueHelpClose"
-        items="{/xNAUTIxVOYAGEHEADERTOITEM}"
-        
+       
+        confirm="onVoyageValueHelpClose"
+        cancel="onVoyageValueHelpClose"
+        items="{/voyapprovalSet}"
     >
         
         <StandardListItem id="ardIte"
