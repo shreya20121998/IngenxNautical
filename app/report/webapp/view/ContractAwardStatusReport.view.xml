@@ -15,12 +15,8 @@
     xmlns:l="sap.ui.layout"
     xmlns="sap.m"
 >
-    <Page
-        id="detail"
-        title="Contract Live Freight Report"
-        backgroundDesign="Solid"
-        navButtonPress=".onPressDetailBack"
-    >
+    <Page id="detail" title="Contract Live Freight Report" backgroundDesign="Solid" 
+    navButtonPress=".onPressDetailBack" >
    
         <HBox class="mainHeaderApproval" alignItems="End" width="100%">
             <HBox width="90%">
@@ -30,9 +26,9 @@
                         text="Chartering Number "
                     />
                     <Input
-                        id="voyageNo"
-                        showValueHelp="true"
-                    valueHelpRequest="onVoyageNumber"
+                    id="CharteringNo"
+                    showValueHelp="true"
+                    valueHelpRequest="onCharteringNumber"
                     width="100%"
                     selectedItem=""
                 />
@@ -45,98 +41,85 @@
             
         </HBox>
 
-        <!-- <IconTabBar
-            id="idIconTabBarNoIcons"
-            tabDensityMode="Compact"
-            class="icontab"
-        >
-            <items>
-                <IconTabFilter
-                    text="Approve Voyage"
-                    key="info"
-                > -->
-                <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
-                
-                    <Table id="myTableId"  width="auto" visible="true" items="{bidData>/biddingData}">
-                        <columns>
-                            <Column width="95px">
-                                <Text text="Charter No."  />
-                            </Column>
-                            <Column>
-                                <Text text="Voyage Number" />
-                            </Column>
-                            <Column>
-                                <Text text="Vendor" />
-                            </Column>
-                            <Column>
-                                <Text text="Awarded" />
-                            </Column>
-                            <Column>
-                                <Text text="Code" />
-                            </Column>
-                            <Column>
-                                <Text text="Bid Date" />
-                            </Column>
-                            <Column>
-                                <Text text="Bid Time" />
-                            </Column>
-                            <Column>
-                                <Text text="Code Description" />
-                            </Column>
-                            <Column>
-                                <Text text="Value" />
-                            </Column>
-                            <Column>
-                                <Text text="Currency" />
-                            </Column>
-                            <Column>
-                                <Text text="Done By" />
-                            </Column>
-                            <Column>
-                                <Text text="Created By" />
-                            </Column>
-                            <Column>
-                                <Text text="Status" />
-                            </Column>
-                            <Column>
-                                <Text text="Type(Auto)" />
-                            </Column>
-                            <Column>
-                                <Text text="Comments" />
-                            </Column>
-                            <Column>
-                                <Text text="Award Created By" />
-                            </Column>
-                        </columns>
 
-                        <items>
-                            <ColumnListItem>
-                                <cells>
-                                     <Text text="{bidData>Voyage Number}" />
-                                    <Text text="{bidData>Vendor}" />
-                                    <Text text="{bidData>Charter No.}" />
-                                    <Text text="{}" />
-                                    <Text text="{bidData>Code}" />
-                                    <Text text="{bidData>Bid Date}" />
-                                    <Text text="{bidData>Bid Time}" />
-                                    <Text text="{bidData>Code Description}" />
-                                    <Text text="{bidData>Value}" />
-                                    <Text text="{bidData>Currency}" />
-                                    <Text text="{bidData>Done By Ve}" />
-                                    <Text text="{}" />
-                                    <Text text="{bidData>Status}" />
-                                    <Text text="{bidData>Type(Auto)}" />
-                                    <Text text="{bidData>Comments}" />
-                                    <Text text="{bidData>Award Info}" />
-                             
-                                </cells>
-                            </ColumnListItem>
-                        </items>
-                    </Table>
-                    </ScrollContainer>
-                <!-- </IconTabFilter>
+        <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
+            <Table id="myTableId"  width="auto" visible="true" items="{bidData>/biddingData}">
+                <columns>
+                    <Column width="95px">
+                        <Text text="Charter No."  />
+                    </Column>
+                    <Column>
+                        <Text text="Voyage Number" />
+                    </Column>
+                    <Column>
+                        <Text text="Vendor" />
+                    </Column>
+                    <Column>
+                        <Text text="Awarded" />
+                    </Column>
+                    <Column>
+                        <Text text="Code" />
+                    </Column>
+                    <Column>
+                        <Text text="Bid Date" />
+                    </Column>
+                    <Column>
+                        <Text text="Bid Time" />
+                    </Column>
+                    <Column>
+                        <Text text="Code Description" />
+                    </Column>
+                    <Column>
+                        <Text text="Value" />
+                    </Column>
+                    <Column>
+                        <Text text="Currency" />
+                    </Column>
+                    <Column>
+                        <Text text="Done By" />
+                    </Column>
+                    <Column>
+                        <Text text="Created By" />
+                    </Column>
+                    <Column>
+                        <Text text="Status" />
+                    </Column>
+                    <Column>
+                        <Text text="Type(Auto)" />
+                    </Column>
+                    <Column>
+                        <Text text="Comments" />
+                    </Column>
+                    <Column>
+                        <Text text="Award Created By" />
+                    </Column>
+                </columns>
 
-            </items> -->
-        <!-- </IconTabBar> -->
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{bidData>Voyage Number}" />
+                            <Text text="{bidData>Vendor}" />
+                            <Text text="{bidData>Charter No.}" />
+                            <Text text="{}" />
+                            <Text text="{bidData>Code}" />
+                            <Text text="{bidData>Bid Date}" />
+                            <Text text="{bidData>Bid Time}" />
+                            <Text text="{bidData>Code Description}" />
+                            <Text text="{bidData>Value}" />
+                            <Text text="{bidData>Currency}" />
+                            <Text text="{bidData>Done By Ve}" />
+                            <Text text="{}" />
+                            <Text text="{bidData>Status}" />
+                            <Text text="{bidData>Type(Auto)}" />
+                            <Text text="{bidData>Comments}" />
+                            <Text text="{bidData>Award Info}" />
+                        
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </ScrollContainer>
+
     </Page>
 </mvc:View>
