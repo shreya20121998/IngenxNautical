@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <SelectDialog
+        id="mySelec"
+        noDataText="Loading"
+        title="Select Chartering Request Number."
+        search="onChartSearch"
+        confirm="onCharteringValueHelpClose"
+        cancel="onCharteringValueHelpClose"
+    >
+        <items>
+            <StandardListItem
+                id="ardIte"
+                title="{charterData>CharteringRequestNumber}"
+                description="{charterData>Description}"
+                iconDensityAware="false"
+                iconInset="false"
+                type="Active"
+            />
+        </items>
+    </SelectDialog>
+</core:FragmentDefinition>

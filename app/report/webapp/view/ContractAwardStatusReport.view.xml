@@ -1,0 +1,141 @@
+<mvc:View
+    xmlns:controls="sap.viz.ui5.controls"
+    controllerName="com.ingenx.nauti.report.controller.ContractAwardStatusReport"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:semantic="sap.m.semantic"
+    xmlns:core="sap.ui.core"
+    xmlns:tnt="sap.tnt"
+    xmlns:cards="sap.f.cards"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:ui="sap.ui.table"
+    xmlns:u="sap.ui.unified"
+    xmlns:c="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m"
+>
+    <Page
+        id="detail"
+        title="Contract Live Freight Report"
+        backgroundDesign="Solid"
+        navButtonPress=".onPressDetailBack"
+    >
+   
+        <HBox class="mainHeaderApproval" alignItems="End" width="100%">
+            <HBox width="90%">
+                <form:SimpleForm editable="true">
+                    <Label
+                        id="IDGenLabel1"
+                        text="Chartering Number "
+                    />
+                    <Input
+                        id="voyageNo"
+                        showValueHelp="true"
+                    valueHelpRequest="onVoyageNumber"
+                    width="100%"
+                    selectedItem=""
+                />
+                </form:SimpleForm>
+            </HBox>
+          
+            <HBox class="btnForApproval" width="10%">
+                <Button  text="Execute" ></Button>
+            </HBox>
+            
+        </HBox>
+
+        <!-- <IconTabBar
+            id="idIconTabBarNoIcons"
+            tabDensityMode="Compact"
+            class="icontab"
+        >
+            <items>
+                <IconTabFilter
+                    text="Approve Voyage"
+                    key="info"
+                > -->
+                <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
+                
+                    <Table id="myTableId"  width="auto" visible="true">
+                        <columns>
+                            <Column width="95px">
+                                <Text text="Charter No."  />
+                            </Column>
+                            <Column>
+                                <Text text="Voyage Number" />
+                            </Column>
+                            <Column>
+                                <Text text="Vendor" />
+                            </Column>
+                            <Column>
+                                <Text text="Awarded" />
+                            </Column>
+                            <Column>
+                                <Text text="Code" />
+                            </Column>
+                            <Column>
+                                <Text text="Bid Date" />
+                            </Column>
+                            <Column>
+                                <Text text="Bid Time" />
+                            </Column>
+                            <Column>
+                                <Text text="Code Description" />
+                            </Column>
+                            <Column>
+                                <Text text="Value" />
+                            </Column>
+                            <Column>
+                                <Text text="Currency" />
+                            </Column>
+                            <Column>
+                                <Text text="Done By" />
+                            </Column>
+                            <Column>
+                                <Text text="Created By" />
+                            </Column>
+                            <Column>
+                                <Text text="Status" />
+                            </Column>
+                            <Column>
+                                <Text text="Type(Auto)" />
+                            </Column>
+                            <Column>
+                                <Text text="Comments" />
+                            </Column>
+                            <Column>
+                                <Text text="Award Created By" />
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="40000000031" />
+                                    <Text text="10000000042" />
+                                    <Text text="21000000002" />
+                                    <Text text="L1" />
+                                    <Text text="FREIG" />
+                                    <Text text="18.9.2023" />
+                                    <Text text="11:47:45" />
+                                    <Text text="FREIGHT COST" />
+                                    <Text text="10000000.0" />
+                                    <Text text="USD" />
+                                    <Text text="X" />
+                                    <Text text="21000000001" />
+                                    <Text text="ON" />
+                                    <Text text="AUTO" />
+                                    <Text text="" />
+                                    <Text text="S.GUPTA" />
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                    </ScrollContainer>
+                <!-- </IconTabFilter>
+
+            </items> -->
+        <!-- </IconTabBar> -->
+    </Page>
+</mvc:View>

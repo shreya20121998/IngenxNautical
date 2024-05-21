@@ -1,0 +1,1 @@
+using NauticalReportService as service from '../../srv/Reportservice';
