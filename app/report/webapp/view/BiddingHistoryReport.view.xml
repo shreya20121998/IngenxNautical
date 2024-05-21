@@ -64,7 +64,7 @@
                 > -->
                 <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
                 
-                    <Table id="myTableId"  width="auto" visible="true">
+                    <Table id="myTableId"  width="auto" visible="true" items="{bidData>/biddingData}" >
                         <columns>
                             <Column width="95px">
                                 <Text text="Voyage Number."  />
@@ -117,21 +117,20 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Text text="40000000031" />
-                                    <Text text="10000000042" />
-                                    <Text text="21000000002" />
-                                    <Text text="L1" />
-                                    <Text text="18.9.2023" />
-                                    <Text text="11:47:45" />
-                                    <Text text="FREIGHT COST" />
-                                    <Text text="10000000.0" />
-                                    <Text text="USD" />
-                                    <Text text="X" />
-                                    <Text text="21000000001" />
-                                    <Text text="ON" />
-                                    <Text text="AUTO" />
-                                    <Text text="" />
-                                    <Text text="S.GUPTA" />
+                                    <Text text="{bidData>Voyage Number}" />
+                                    <Text text="{bidData>Vendor}" />
+                                    <Text text="{bidData>Charter No.}" />
+                                    <Text text="{bidData>Code}" />
+                                    <Text text="{bidData>Bid Date}" />
+                                    <Text text="{bidData>Bid Time}" />
+                                    <Text text="{bidData>Code Description}" />
+                                    <Text text="{bidData>Value}" />
+                                    <Text text="{bidData>Currency}" />
+                                    <Text text="{bidData>Done By Ve}" />
+                                    <Text text="{bidData>Status}" />
+                                    <Text text="{bidData>Type(Auto)}" />
+                                    <Text text="{bidData>Comments}" />
+                                    <Text text="{bidData>Award Info}" />
                                 </cells>
                             </ColumnListItem>
                         </items>

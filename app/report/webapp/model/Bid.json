@@ -1,0 +1,46 @@
+{
+    "biddingData": [
+        {
+            "Voyage Number": "40000000031",
+            "Vendor": "10000000042",
+            "Charter No.": "21000000002",
+            "Code": "L1",
+            "Bid Date": "18.9.2023",
+            "Bid Time": "11:47:45",
+            "Code Description": "FREIGHT COST",
+            "Value": "10000000.0",
+            "Currency": "USD",
+            "Done By Ve": "X",
+            "Status": "ON",
+            "Type(Auto)": "AUTO",
+            "Comments": "",
+            "Award Info": "S.GUPTA"
+        },
+        {
+            "Voyage Number": "40000000032",
+            "Vendor": "10000000044",
+            "Charter No.": "21000000003",
+            "Code": "L2",
+            "Bid Date": "19.9.2023",
+            "Bid Time": "11:49:45",
+            "Code Description": "FREIGHT COST",
+            "Value": "10000000.0",
+            "Currency": "USD",
+            "Done By Ve": "X",
+            "Status": "ON",
+            "Type(Auto)": "AUTO",
+            "Comments": "",
+            "Award Info": "Vikram"
+        }
+ 
+
+
+
+
+           
+
+  
+        
+
+    ]
+}

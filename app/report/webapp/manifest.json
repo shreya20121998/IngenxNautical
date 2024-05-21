@@ -68,6 +68,10 @@
           "bundleName": "com.ingenx.nauti.report.i18n.i18n"
         }
       },
+      "bidData":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/Bid.json"
+      },
       "": {
         "dataSource": "mainService",
         "preload": true,
