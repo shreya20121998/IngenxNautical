@@ -4,9 +4,10 @@ sap.ui.define(
         "sap/m/MessageBox",
         "sap/ui/model/json/JSONModel",
         "sap/ui/model/Filter",
-        "sap/ui/model/FilterOperator"
+        "sap/ui/model/FilterOperator",
+        "sap/ui/core/Fragment"
     ],
-    function (BaseController, MessageBox, JSONModel, Filter, FilterOperator) {
+    function (BaseController, MessageBox, JSONModel, Filter, FilterOperator,Fragment) {
         "use strict";
         return BaseController.extend("com.ingenx.nauti.report.controller.BiddingHistoryReport", {
             onInit() {
@@ -39,7 +40,7 @@ sap.ui.define(
             },
 
 
-            
+
 
 
             

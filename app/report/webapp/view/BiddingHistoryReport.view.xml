@@ -18,7 +18,7 @@
     <Page id="detail" title="Bidding History Report" backgroundDesign="Solid" navButtonPress=".onPressDetailBack" >
    
         <HBox class="mainHeaderApproval" alignItems="End" width="100%">
-            <HBox width="90%">
+            <HBox>
                 <form:SimpleForm editable="true">
                     <Label
                         id="IDGenLabel1"
@@ -46,7 +46,7 @@
                 
             </HBox>
           
-            <HBox class="btnForApproval" width="10%">
+            <HBox class="btnForApproval">
                 <Button  text="Execute" press="onExecute"></Button>
             </HBox>
             

@@ -1,10 +1,10 @@
 /* Enter your custom styles here */
-.sapMFlexBoxJustifyStart {
+/* .sapMFlexBoxJustifyStart {
     justify-content: center;
     
-}
+} */
 .btnForApproval{
-   float: right !important;
+    margin-left: 60%;
 }
 .mainHeaderApproval{
     background-color: white;

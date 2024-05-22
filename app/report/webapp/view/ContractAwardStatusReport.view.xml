@@ -19,7 +19,7 @@
     navButtonPress=".onPressDetailBack" >
    
         <HBox class="mainHeaderApproval" alignItems="End" width="100%">
-            <HBox width="90%">
+            <HBox >
                 <form:SimpleForm editable="true">
                     <Label
                         id="IDGenLabel1"
@@ -35,15 +35,15 @@
                 </form:SimpleForm>
             </HBox>
           
-            <HBox class="btnForApproval" width="10%">
-                <Button  text="Execute" ></Button>
+            <HBox class="btnForApproval">
+                <Button  text="Execute" press="onExecutePress"></Button>
             </HBox>
             
         </HBox>
 
 
         <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
-            <Table id="myTableId"  width="auto" visible="true" items="{bidData>/biddingData}">
+            <Table id="myTableId"  width="auto" visible="false" items="{bidData>/biddingData}">
                 <columns>
                     <Column width="95px">
                         <Text text="Charter No."  />
