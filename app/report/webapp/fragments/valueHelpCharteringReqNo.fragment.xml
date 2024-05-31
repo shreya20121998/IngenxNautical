@@ -1,15 +1,23 @@
+
 <core:FragmentDefinition
     xmlns="sap.m"
-    xmlns:core="sap.ui.core"
->
-    <Dialog id="charterNumberDialog" title="Select Charter Number">
-        <content>
-            <List items="{bidData>/biddingData}">
-                <StandardListItem title="{bidData>Charter No.}" />
-            </List>
-        </content>
-        <endButton>
-            <Button text="Cancel" press="onCancel" />
-        </endButton>
-    </Dialog>
+    xmlns:core="sap.ui.core">  
+    <SelectDialog
+        id="mySelec"
+        noDataText="Loading"
+        title="Select Voyage No."
+        search="onChartSearch"
+        confirm="onCharteringValueHelpClose"
+        cancel="onCharteringValueHelpClose"
+        items="{/xNAUTIxLIVEFRIEGHTREPORT}"
+    >
+        
+        <StandardListItem id="ardIte"
+            
+            title="{Chrnmin}"
+
+            iconDensityAware="false"
+            iconInset="false"
+            type="Active" />
+    </SelectDialog>
 </core:FragmentDefinition>

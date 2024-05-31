@@ -17,7 +17,14 @@ module.exports = async (srv) =>
     srv.on('READ', 'VoyTypeSet', req => NAUTINAUTICALCV_SRV.run(req.query)); 
     srv.on('READ', 'CargoUnitSet', req => NAUTINAUTICALCV_SRV.run(req.query)); 
 
+   
+
     const NAUTIZVOYAPPROVAL_SRV = await cds.connect.to("NAUTIZVOYAPPROVAL_SRV"); 
-    srv.on('READ', 'voyapprovalSet', req => NAUTIZVOYAPPROVAL_SRV.run(req.query)); 
+      srv.on('READ', 'voyapprovalSet', req => NAUTIZVOYAPPROVAL_SRV.run(req.query)); 
+
+      srv.on('UPDATE', 'voyapprovalSet', req => NAUTIZVOYAPPROVAL_SRV.run(req.query)); 
+      srv.on('READ', 'xNAUTIxgetvoyapproval', req => NAUTIZVOYAPPROVAL_SRV.run(req.query)); 
+      srv.on('READ', 'xNAUTIxvoyapproval1', req => NAUTIZVOYAPPROVAL_SRV.run(req.query)); 
+      
     
 }

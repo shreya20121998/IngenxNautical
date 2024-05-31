@@ -110,6 +110,13 @@
           "target": [
             "TargetChangeChartering"
           ]
+        },
+        {
+          "name": "RouteCharteringApproval",
+          "pattern": "CharteringApproval",
+          "target": [
+            "TargetCharteringApproval"
+          ]
         }
       ],
       "targets": {
@@ -126,6 +133,13 @@
           "clearControlAggregation": false,
           "viewId": "ChangeChartering",
           "viewName": "ChangeChartering"
+        },
+        "TargetCharteringApproval": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "CharteringApproval",
+          "viewName": "CharteringApproval"
         }
       }
     },

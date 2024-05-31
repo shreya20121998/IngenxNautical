@@ -6,7 +6,7 @@
     xmlns:core="sap.ui.core"
     xmlns:tnt="sap.tnt"
     xmlns:cards="sap.f.cards"
-    xmlns:form="sap.ui.layout.form"
+    xmlns:form="sap.ui.layout.form" 
     xmlns:ui="sap.ui.table"
     xmlns:u="sap.ui.unified"
     xmlns:c="sap.ui.core"
@@ -16,7 +16,7 @@
     xmlns="sap.m"
 >
     <Page id="detail" title="Contract Live Freight Report" backgroundDesign="Solid" 
-    navButtonPress=".onPressDetailBack" >
+        navButtonPress=".onPressDetailBack" >
    
         <HBox class="mainHeaderApproval" alignItems="End" width="100%">
             <HBox >
@@ -43,7 +43,8 @@
 
 
         <ScrollContainer id="_IDGenScrollContainer2" horizontal="true"  vertical="false" class="scrollContainer">
-            <Table id="myTableId"  width="auto" visible="false" items="{bidData>/biddingData}">
+
+            <Table id="myTableId"  width="auto" visible="true" items="{xNAUTIxLIVEFRIEGHTREPORT?$expand=toitem1, toitem2}">
                 <columns>
                     <Column width="95px">
                         <Text text="Charter No."  />
@@ -98,9 +99,9 @@
                 <items>
                     <ColumnListItem>
                         <cells>
-                            <Text text="{bidData>Voyage Number}" />
-                            <Text text="{bidData>Vendor}" />
-                            <Text text="{bidData>Charter No.}" />
+                            <Text text="{Chrnmin}" />
+                            <Text text="{Voyno}" />                         
+                            <Text text="{Lifnr}" />
                             <Text text="{}" />
                             <Text text="{bidData>Code}" />
                             <Text text="{bidData>Bid Date}" />
@@ -114,11 +115,11 @@
                             <Text text="{bidData>Type(Auto)}" />
                             <Text text="{bidData>Comments}" />
                             <Text text="{bidData>Award Info}" />
-                        
                         </cells>
                     </ColumnListItem>
                 </items>
             </Table>
+
         </ScrollContainer>
 
     </Page>

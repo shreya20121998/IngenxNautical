@@ -31,6 +31,54 @@
             "Type(Auto)": "AUTO",
             "Comments": "",
             "Award Info": "Vikram"
+        },
+        {
+            "Voyage Number": "40000000061",
+            "Vendor": "10000000072",
+            "Charter No.": "21000000003",
+            "Code": "L1",
+            "Bid Date": "18.9.2023",
+            "Bid Time": "11:47:45",
+            "Code Description": "FREIGHT COST",
+            "Value": "10000000.0",
+            "Currency": "USD",
+            "Done By Ve": "X",
+            "Status": "ON",
+            "Type(Auto)": "AUTO",
+            "Comments": "",
+            "Award Info": "S.GUPTA"
+        },
+        {
+            "Voyage Number": "40000000091",
+            "Vendor": "10000000002",
+            "Charter No.": "21000000004",
+            "Code": "L1",
+            "Bid Date": "18.9.2023",
+            "Bid Time": "11:47:45",
+            "Code Description": "FREIGHT COST",
+            "Value": "10000000.0",
+            "Currency": "USD",
+            "Done By Ve": "X",
+            "Status": "ON",
+            "Type(Auto)": "AUTO",
+            "Comments": "",
+            "Award Info": "S.GUPTA"
+        },
+        {
+            "Voyage Number": "40000000051",
+            "Vendor": "10000000045",
+            "Charter No.": "21000000005",
+            "Code": "L1",
+            "Bid Date": "18.9.2023",
+            "Bid Time": "11:47:45",
+            "Code Description": "FREIGHT COST",
+            "Value": "10000000.0",
+            "Currency": "USD",
+            "Done By Ve": "X",
+            "Status": "ON",
+            "Type(Auto)": "AUTO",
+            "Comments": "",
+            "Award Info": "S.GUPTA"
         }
  
 

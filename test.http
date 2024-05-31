@@ -1,15 +1,21 @@
 
 
-GET http://localhost:4004/odata/v4/nautical-chartering/voyapprovalSet
+GET http://localhost:4004/odata/v4/nautical-voyage/voyapprovalSet(Vreqno='2000000190',Voyno='1000000159',Zlevel='01',Uname='A.SHARMA')
 
-####
+####,
 
-POST http://localhost:4004/odata/v4/nautical-chartering/voyapprovalSet
+PUT http://localhost:4004/odata/v4/nautical-voyage/voyapprovalSet(Vreqno='2000000190',Voyno='1000000159',Zlevel='01',Uname='A.SHARMA')
 Content-Type: application/json
 
 {
-     "Vreqno": "",
-      "Voyno": "100000034"
+  
+    "Vreqno" : "2000000190",
+    "Voyno" : "1000000159",
+    "Zlevel" : "01",
+    "Uname" : "A.SHARMA",
+    "Zcomm" : "Testing Approval",
+    "Zaction" : "APPR"
+  
       
 
 }

@@ -1,3 +1,35 @@
+    .voytext{
+        margin-right: 115px;
+    }
+    .voyageHeaderItem{
+        margin-top: 0% !important;
+    }
+  .scrollContainer{
+    scrollbar-width: none;
+  }
+  .planInfo{
+    gap:10px ;
+  }
+  .VoyageHeader{
+    gap:8% ;
+    margin-left: 60px;
+  }
+  .icontab{
+  margin-top: 5px;
+   
+   
+  }
+  .headerItem{
+    gap :10px;
+   
+  }
+  .VoyageItem{
+    margin-right:65%;
+  }
+  .createVoyageHeader{
+    gap:6% ;
+    margin-left: 60px;
+  }
 .sapMFlexBoxJustifyStart {
     justify-content: center;
     
@@ -290,14 +322,14 @@
 
 /* Master data pages css by anurag */
  
-.customHeader{
+/* .customHeader{
     background-color: black;
-}
+} */
 .size1{
     margin-left: 1rem !important;
 }
 .textBid{
-    color: white;
+    color: black;
 }
 
 .masterFileUpload{

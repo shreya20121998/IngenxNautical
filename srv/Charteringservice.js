@@ -9,9 +9,13 @@ module.exports = async (srv) =>
       srv.on('READ', 'xNAUTIxpurchGroup', req => NAUTIBTP_NAUTICAL_TRANSACTIO_SRV.run(req.query)); 
       srv.on('READ', 'xNAUTIxpaymTerm', req => NAUTIBTP_NAUTICAL_TRANSACTIO_SRV.run(req.query)); 
       srv.on('READ', 'xNAUTIxCHARTPURCHASEITEM', req => NAUTIBTP_NAUTICAL_TRANSACTIO_SRV.run(req.query)); 
-      srv.on('READ', 'xNAUTIxCHARTERING', req => NAUTIBTP_NAUTICAL_TRANSACTIO_SRV.run(req.query)); 
-
+      srv.on('READ', 'xNAUTIxCHARTERING', req => NAUTIBTP_NAUTICAL_TRANSACTIO_SRV.run(req.query));
+    
       srv.on('CREATE', 'xNAUTIxCharteringHeaderItem', req => NAUTIBTP_NAUTICAL_TRANSACTIO_SRV.run(req.query)); 
+
+      const NAUTIZCHATAPPROVAL_SRV = await cds.connect.to("NAUTIZCHATAPPROVAL_SRV"); 
+      srv.on('READ', 'xNAUTIxchaApp1', req => NAUTIZCHATAPPROVAL_SRV.run(req.query)); 
+      srv.on('READ', 'chartapprSet', req => NAUTIZCHATAPPROVAL_SRV.run(req.query)); 
 
 
       const NAUTIMASTER_BTP_SRV = await cds.connect.to("NAUTIMASTER_BTP_SRV"); 
